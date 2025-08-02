@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout"
+import HomePage from "./pages/HomePage";
+import MovieDetail from "./pages/MovieDetail";
 
 function App() {
 
@@ -8,8 +10,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route></Route>
-            <Route></Route>
+            <Route index element={<HomePage />}></Route>
+            <Route path="" element={<MovieDetail />}></Route>
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
