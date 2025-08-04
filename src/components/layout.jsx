@@ -4,7 +4,7 @@ export default function Layout() {
     return (
         <>
             <nav className="navbar navbar-dark bg-dark px-4">
-                <Link className="navbar-brand text-white" to="/"> MyMovies</Link>
+                <Link className="navbar-brand text-white logo" to="/"> MyMovies</Link>
             </nav>
 
             <main className="container mt-4">
