@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout"
 import HomePage from "./pages/HomePage";
 import MovieDetail from "./pages/MovieDetail";
+import ReviewsPage from "./pages/ReviewsPages";
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />}></Route>
             <Route path="movie/:id" element={<MovieDetail />} />
+            <Route path="reviews" element={<ReviewsPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
@@ -21,3 +23,5 @@ function App() {
 }
 
 export default App
+
+

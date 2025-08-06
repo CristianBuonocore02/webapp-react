@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import Reviews from '../components/Review';
 
 export default function MovieDetail() {
     const { id } = useParams();
@@ -23,6 +24,9 @@ export default function MovieDetail() {
             />
 
             <p>Movie ID: {id}</p>
+
+            <Reviews movieId={id} />
+
         </div>
     );
 }
